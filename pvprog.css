@@ -1,0 +1,40 @@
+.container{
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    max-width: 60%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    background-color:rgb(250, 233, 245);
+   place-items: center;
+   
+}
+.container2{
+   margin: 0 auto;
+   max-width: 60%;
+   
+}
+.imgflor{
+    width: 50%;
+    height: 50%;
+}
+.griditem{
+    width: 250px;
+    height:250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  background-color:pink;   
+  border: 5px;
+}
+
+   
+
+.order1{
+grid-row: 2;
+
+}
+.order2{
+   grid-row: 2;
+}
