@@ -6,38 +6,34 @@ body {
    width: 850px;
    display: grid;
    margin: 0 auto;
-   max-width: 60%;
    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
-   gap: 10px;
+   gap: 30px;
+   max-width: 60%;
    place-items: center;
    border-radius: 10px;
 
 }
 
-.esgotado {
-   position: absolute;
-   top: 10px;
-   left: 50%;
-   transform: translateX(-50%);
-   background-color: red;
-   color: white;
-   font-weight: bold;
-   padding: 5px 10px;
-   border-radius: 5px;
-   font-size: 12px;
-   text-transform: uppercase;
-}
-
 .container2 {
    margin: 0 auto;
    max-width: 60%;
-
 }
 
 .imgflor {
    width: 50%;
    height: 50%;
    border-radius: 10px;
+}
+.esgotado{
+   position: absolute;
+   max-width: 80%;
+}
+
+.desconto{
+   position: absolute;
+   width: 40px;
+   top: 100px;
+   right: -11px;
 }
 
 .griditem {
@@ -47,9 +43,10 @@ body {
    align-items: center;
    justify-content: center;
    flex-direction: column;
-   background-color: pink;
+   background-color: rgb(255, 208, 216);
    border: 5px;
    border-radius: 10px;
+   position: relative;
 }
 
 .griditem:hover {
@@ -106,10 +103,10 @@ footer .social {
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    text-align: center;
    background-color: pink;
-   display: grid;
+   display: flex;
    justify-content:space-around;
    align-items: center;
-   flex-direction: row;
+   flex-direction: column;
    
 }
 
@@ -128,8 +125,6 @@ footer .social {
    display: flex;
    width: 100px;
    
-   
-
 }
 .order1 {
    grid-row: 2;
@@ -138,4 +133,17 @@ footer .social {
 
 .order2 {
    grid-row: 2;
+}
+
+@media screen and (min-width: 1000px) {
+   .midia{
+      text-align: center; 
+   }
+}
+
+@media screen and (min-width: 1000px) {
+   footer .social {
+      flex-direction: row; 
+     
+   }
 }
