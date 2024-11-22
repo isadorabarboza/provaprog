@@ -8,7 +8,7 @@ body {
    margin: 0 auto;
    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
    gap: 30px;
-   max-width: 60%;
+ max-width: 90%;
    place-items: center;
    border-radius: 10px;
 
